@@ -1,0 +1,7 @@
+.poke__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .poke__item{
+    list-style: none;
+  }

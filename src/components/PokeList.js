@@ -1,5 +1,6 @@
 import React from "react";
 import Pokemon from "./Pokemon";
+import "../PokeList.css";
 
 class PokeList extends React.Component {
   render() {
@@ -8,7 +9,7 @@ class PokeList extends React.Component {
     return (
       <ul className="poke__list">
         {pokeData.map(item => (
-          <li className="poke__card" key={item.id}>
+          <li className="poke__item" key={item.id}>
             <Pokemon 
             src={item.url} 
             title={item.name} 

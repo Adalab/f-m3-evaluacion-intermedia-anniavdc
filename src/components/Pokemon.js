@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import "../App.css";
+import "../Pokemon.css";
 
 class Pokemon extends React.Component {
   render() {
     const { src, title, type } = this.props;
     return (
-      <React.Fragment>
+      <div className="poke__card">
         <img className="card__image" src={src} alt={title} />
         <h2 className="card__title">{title}</h2>
         <ul className="card__plus-info">
@@ -16,7 +16,7 @@ class Pokemon extends React.Component {
             </li>
           ))}
         </ul>
-      </React.Fragment>
+      </div>
     );
   }
 }
@@ -24,6 +24,6 @@ class Pokemon extends React.Component {
 Pokemon.propTypes={
   title: PropTypes.string,
   src: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.arrayOf(PropTypes.string)
 }
 export default Pokemon;

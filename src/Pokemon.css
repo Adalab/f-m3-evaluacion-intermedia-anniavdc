@@ -1,15 +1,9 @@
-.poke__list{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .poke__card{
   width: 150px;
   height: 200px;
   background-color: rgb(226, 226, 226);
   border-radius: 20px;
   margin: 20px;
-  list-style: none;
   text-align: center;
   border: 1px solid gray;
 }
