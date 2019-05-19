@@ -1,5 +1,5 @@
 import React from "react";
-import {pokemon}  from './services/ReasonsService';
+import { pokemon } from "./services/ReasonsService";
 import PokeList from "./components/PokeList";
 
 class App extends React.Component {
