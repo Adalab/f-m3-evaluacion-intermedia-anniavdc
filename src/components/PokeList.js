@@ -8,16 +8,17 @@ class PokeList extends React.Component {
     return (
       <ul className="poke__list">
         {pokeData.map(item => (
-          <Pokemon
-            key={item.id}
-            src={item.url}
-            title={item.name}
-            type={item.types}
-          />
+          <li className="poke__card" key={item.id}>
+            <Pokemon 
+            src={item.url} 
+            title={item.name} 
+            type={item.types} />
+          </li>
         ))}
       </ul>
     );
   }
 }
+
 
 export default PokeList;

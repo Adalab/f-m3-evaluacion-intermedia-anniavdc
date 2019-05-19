@@ -90,6 +90,7 @@ class App extends React.Component {
     const pokeData = pokemon;
     return (
       <div className="App">
+        <h1>Pokemons List</h1>
         <PokeList pokeData={pokeData} />
       </div>
     );
